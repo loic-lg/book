@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réfléchissez et devenez riche</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        function filterBiais() {
+            let input = document.getElementById("searchInput").value.toLowerCase();
+            let biaisItems = document.querySelectorAll(".biais-item");
+
+            biaisItems.forEach(item => {
+                let text = item.textContent.toLowerCase();
+                if (text.includes(input)) {
+                    item.style.display = "";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Retour à l'accueil</a>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <h1 class="text-center">Réfléchissez et devenez riche</h1>
+        <h3 class="text-center text-muted">de Napoleon Hill</h3>
+
+        <div class="mt-4">
+            <h2>Concepts importants :</h2>
+        <ul>
+            <li>
+                <strong>Le désir brûlant</strong>
+                <p>Développer un désir ardent pour atteindre ses objectifs, et visualiser ce que l'on souhaite avant même de l'obtenir.</p>
+            </li>
+            <li>
+                <strong>La foi</strong>
+                <p>Croire en ses objectifs et en sa capacité à les réaliser, car la foi est un moteur du succès.</p>
+            </li>
+            <li>
+                <strong>L'autosuggestion</strong>
+                <p>Utiliser des affirmations et la visualisation pour programmer son subconscient en vue du succès.</p>
+            </li>
+            <li>
+                <strong>La connaissance spécialisée</strong>
+                <p>Maîtriser une connaissance spécialisée utile et pratique, plutôt qu'une accumulation de savoirs généraux.</p>
+            </li>
+            <li>
+                <strong>L'imagination</strong>
+                <p>Utiliser l'imagination créative pour résoudre des problèmes et générer des idées novatrices.</p>
+            </li>
+            <li>
+                <strong>La planification organisée</strong>
+                <p>Créer un plan structuré et s'entourer de personnes compétentes pour atteindre ses objectifs.</p>
+            </li>
+            <li>
+                <strong>La prise de décision</strong>
+                <p>Prendre des décisions rapidement et ne pas changer fréquemment d'avis, car l'indécision mène à l'échec.</p>
+            </li>
+            <li>
+                <strong>La persévérance</strong>
+                <p>Continuer d'agir malgré les obstacles et ne jamais abandonner face à l'échec.</p>
+            </li>
+            <li>
+                <strong>Le pouvoir du "Mastermind"</strong>
+                <p>S'entourer d'un groupe de personnes avec qui partager des objectifs communs pour bénéficier de soutien et de ressources mutuelles.</p>
+            </li>
+            <li>
+                <strong>La transmutation du désir sexuel</strong>
+                <p>Convertir l'énergie sexuelle en créativité et en ambition pour alimenter sa réussite.</p>
+            </li>
+            <li>
+                <strong>Le subconscient</strong>
+                <p>Alimenter son subconscient avec des pensées positives pour qu'il influence ses actions dans la bonne direction.</p>
+            </li>
+            <li>
+                <strong>Le cerveau</strong>
+                <p>Utiliser son cerveau comme un émetteur et récepteur de pensées pour attirer le succès.</p>
+            </li>
+            <li>
+                <strong>Le sixième sens</strong>
+                <p>Développer son intuition pour prendre des décisions cruciales et saisir des opportunités.</p>
+            </li>
+            <li>
+                <strong>Surmonter la peur</strong>
+                <p>Combattre les six grandes peurs : la pauvreté, la critique, la maladie, la perte d'amour, la vieillesse, et la mort.</p>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+    <footer class="fixed-bottom bg-dark text-center text-white py-2">
+        <p>&copy; 2024 - Mes Concepts Appris</p>
+    </footer>
+</body>
+</html>

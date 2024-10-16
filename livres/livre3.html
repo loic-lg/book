@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système 1 / Système 2 : Les deux vitesses de la pensée</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        function filterBiais() {
+            let input = document.getElementById("searchInput").value.toLowerCase();
+            let biaisItems = document.querySelectorAll(".biais-item");
+
+            biaisItems.forEach(item => {
+                let title = item.querySelector(".biais-title").textContent.toLowerCase();
+                let description = item.querySelector(".biais-description").textContent.toLowerCase();
+
+                if (title.includes(input) || description.includes(input)) {
+                    item.style.display = "";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Retour à l'accueil</a>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <h1 class="text-center">Système 1 / Système 2 : Les deux vitesses de la pensée</h1>
+        <h3 class="text-center text-muted">de Daniel Kahneman</h3>
+
+<div class="mt-4">
+    <h2>Concepts importants :</h2>
+    <ul>
+        <li>
+            <strong>Système 1 : Pensée rapide et intuitive</strong>
+            <p>Le **Système 1** est la partie du cerveau qui fonctionne de manière automatique, rapide et intuitive. C'est ce mode de pensée qui prend des décisions instantanées, souvent sans effort conscient. Il repose sur des heuristiques et des instincts, mais peut être sujet à des biais cognitifs.</p>
+            <p>Exemples de décisions du Système 1 :</p>
+            <ul>
+                <li>Reconnaître un visage familier.</li>
+                <li>Compléter automatiquement des expressions communes.</li>
+                <li>Prendre une décision instinctive face à une situation de danger.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Système 2 : Pensée lente et réfléchie</strong>
+            <p>Le **Système 2** est plus délibéré et analytique. Il entre en jeu lorsqu'il s'agit de résoudre des problèmes complexes, de faire des calculs ou de prendre des décisions nécessitant de la réflexion. Ce système demande plus d'effort et est plus lent, mais il est moins susceptible de commettre des erreurs que le Système 1.</p>
+            <p>Exemples de décisions du Système 2 :</p>
+            <ul>
+                <li>Résoudre un problème de mathématiques.</li>
+                <li>Planifier un itinéraire complexe.</li>
+                <li>Analyser des arguments pour prendre une décision importante.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Les biais cognitifs</strong>
+            <p>Kahneman explique que le **Système 1** est souvent sujet à des **biais cognitifs** en raison de son traitement rapide et heuristique de l'information. Ces biais peuvent conduire à des erreurs de jugement.</p>
+        </li>
+        <br>
+        <br>
+        
+    </ul>
+</div>
+<div class="container my-4">
+    <h1 class="text-center">Liste des Biais Cognitifs</h1>
+    <div class="mb-3">
+        <input type="text" id="searchInput" onkeyup="filterBiais()" class="form-control" placeholder="Rechercher un biais cognitif...">
+    </div>
+
+    
+    <ul class="list-group">
+        <li class="list-group-item biais-item">
+            <a href="biais/confirmation.html">
+                <strong class="biais-title">Biais de Confirmation</strong>
+            </a>
+            <p class="biais-description">Tendance à ne chercher, interpréter et retenir que des informations confirmant ses croyances préexistantes.</p>
+        </li>
+        <li class="list-group-item biais-item">
+            <a href="biais/disponibilite.html">
+                <strong class="biais-title">Biais de Disponibilité</strong>
+            </a>
+            <p class="biais-description">Juger la probabilité d'un événement en fonction de la facilité avec laquelle des exemples similaires viennent à l'esprit.</p>
+        </li>
+        <li class="list-group-item biais-item">
+            <a href="biais/ancrage.html">
+                <strong class="biais-title">Biais d'Ancrage</strong>
+            </a>
+            <p class="biais-description">Influencer une décision ou une estimation en se basant de manière excessive sur la première information disponible.</p>
+        </li>
+        <li class="list-group-item biais-item">
+            <a href="biais/autocomplaisance.html">
+                <strong class="biais-title">Biais d'Antocomplaisance</strong>
+            </a>
+            <p class="biais-description">Attribuer ses succès à ses propres qualités et ses échecs à des facteurs externes.</p>
+        </li>
+        <li class="list-group-item biais-item">
+            <a href="biais/dunning-kruger.html">
+                <strong class="biais-title">Biais Dunning-Kruger</strong>
+            </a>
+            <p class="biais-description">Tendance des personnes peu compétentes à surestimer leurs compétences, tandis que les personnes compétentes les sous-estiment</p>
+        </li>
+        <li class="list-group-item biais-item">
+            <a href="biais/halo.html">
+                <strong class="biais-title">Biais de Halo</strong>
+            </a>
+            <p class="biais-description">Impression initiale sur une personne ou un objet influençant le jugement global, même si cette impression est limitée à un aspect.</p>
+        </li>
+        <li class="list-group-item biais-item">
+            <a href="biais/representativite.html">
+                <strong class="biais-title">Biais de Représentativité</strong>
+            </a>
+            <p class="biais-description">Juger la probabilité qu'un événement appartienne à une certaine catégorie en fonction de la ressemblance avec un prototype.</p>
+        </li>
+        <li class="list-group-item biais-item">
+            <a href="biais/statu-quo.html">
+                <strong class="biais-title">Biais de Statu-quo</strong>
+            </a>
+            <p class="biais-description">Préférence pour que les choses restent les mêmes plutôt que de changer, même si le changement est plus avantageux.</p>
+        </li>
+        <li class="list-group-item biais-item">
+            <a href="biais/negativite.html">
+                <strong class="biais-title">Biais de négative</strong>
+            </a>
+            <p class="biais-description">Tendance à accorder plus de poids aux expériences négatives qu'aux positives.</p>
+        </li>
+        <li class="list-group-item biais-item">
+            <a href="biais/optimiste.html">
+                <strong class="biais-title">Biais d'Optimisme</strong>
+            </a>
+            <p class="biais-description">Surestimer la probabilité de résultats positifs tout en sous-estimant les risques et les résultats négatifs.</p>
+        </li>
+        <li class="list-group-item biais-item">
+            <a href="biais/simple-exposition.html">
+                <strong class="biais-title">Biais de Simple-exposition</strong>
+            </a>
+            <p class="biais-description">Tendance à préférer quelque chose simplement parce qu'on y a été exposé plusieurs fois.</p>
+        </li>
+        <li class="list-group-item biais-item">
+            <a href="biais/attribution.html">
+                <strong class="biais-title">Biais d'Attribution</strong>
+            </a>
+            <p class="biais-description">Tendance à attribuer les comportements d’autrui à leurs traits de caractère plutôt qu'à la situation.</p>
+        </li>
+        <li class="list-group-item biais-item">
+            <a href="biais/cadrage.html">
+                <strong class="biais-title">Biais de Cadrage</strong>
+            </a>
+            <p class="biais-description">Les décisions sont influencées par la manière dont une situation ou une information est présentée, que ce soit positivement ou négativement.</p>
+        </li>
+        <li class="list-group-item biais-item">
+            <a href="biais/barnum.html">
+                <strong class="biais-title">Biais de barnum</strong>
+            </a>
+            <p class="biais-description">Tendance à croire que des descriptions vagues ou générales (comme l’horoscope) s'appliquent spécifiquement à soi-même.</p>
+        </li>
+        <li class="list-group-item biais-item">
+            <a href="biais/hyperbolique.html">
+                <strong class="biais-title">Biais d'Hyperbolique</strong>
+            </a>
+            <p class="biais-description">Préférence pour des récompenses immédiates plutôt que pour des gains plus importants mais plus éloignés dans le temps.</p>
+        </li>
+        <li class="list-group-item biais-item">
+            <a href="biais/surconfiance.html">
+                <strong class="biais-title">Biais de Surconfiance</strong>
+            </a>
+            <p class="biais-description">Surestimer sa propre capacité ou précision, notamment dans les prises de décision.</p>
+        </li>
+        <li class="list-group-item biais-item">
+            <a href="biais/contraste.html">
+                <strong class="biais-title">Biais de Contraste</strong>
+            </a>
+            <p class="biais-description">Perception d’un objet ou d’une situation influencée par une comparaison avec un autre objet ou situation récente.</p>
+        </li>
+        <li class="list-group-item biais-item">
+            <a href="biais/croyance.html">
+                <strong class="biais-title">Biais de Croyance</strong>
+            </a>
+            <p class="biais-description">Juger la validité d’un argument en fonction de la plausibilité de la conclusion plutôt que de la logique de l'argument.</p>
+        </li>
+        <li class="list-group-item biais-item">
+            <a href="biais/reactance.html">
+                <strong class="biais-title">Biais de Réactance</strong>
+            </a>
+            <p class="biais-description">Réagir de manière opposée lorsqu'on se sent limité ou contraint dans ses choix, même si la contrainte est bénéfique.</p>
+        </li>
+    </ul>
+</div>
+<br>
+<br>
+
+
+        <footer class="fixed-bottom bg-dark text-center text-white py-2">
+            <p>&copy; 2024 - Mes Concepts Appris</p>
+        </footer>
+    </div>
+</body>
+</html>
+
