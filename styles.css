@@ -21,3 +21,9 @@ h1 {
 footer {
     font-size: 14px;
 }
+
+.TOT{
+    background-color: rgba(246, 190, 6, 0.34);
+    background-image: url("images/TheOneThings.png");
+    background-size: 1px;
+}
